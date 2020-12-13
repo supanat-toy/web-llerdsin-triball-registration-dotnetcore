@@ -41,16 +41,17 @@ namespace web_registration.Controllers
         [HttpPost] 
         public IActionResult Completion(Attendee model)
         {
-            var attendee = _attendeeProvider.GetAttendee(model.code, null);
+            // var attendee = _attendeeProvider.GetAttendee(model.code, null);
 
-            if (attendee == null) {
-                return Redirect("/registration?e=o");
-            } else if (attendee.isChecked ?? false) {
-                return Redirect("/registration?e=d");
-            } else {
-                _attendeeProvider.Checkin(model.code);
-                return View("Completion", attendee);
-            }
+            // if (attendee == null) {
+            //     return Redirect("/registration?e=o");
+            // } else if (attendee.isChecked ?? false) {
+            //     return Redirect("/registration?e=d");
+            // } else {
+            //     _attendeeProvider.Checkin(model.code);
+            model.nameTH = "นางสาวเพ็ญ บุญคำ";
+                return View("Completion", model);
+            // }
         }
     }
 }

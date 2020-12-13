@@ -6,28 +6,24 @@
 <link rel="stylesheet" href="~/css/registration.css" />
 
 <div id="registration">
-	@* <img class="image-top-page" src="~/images/background-top.png" /> *@
-	<img class="image-logo" src="~/images/logo.png" />
-	<div class="middle-view">
-		
-		<div class="row content-view">
-			@* <div class="col-md-12 col-xs-12">
-				<img class="image-logo" src="~/images/logo.png" /> 
-			</div> *@
-			<div class="col-md-12 col-xs-12">
+	<div class="container">
+		<div class="middle-view">
+			<img class="image-logo" src="~/images/logo.png" />
+				<div class="row content-view">
+				<div class="col-md-12 col-xs-12">
 				
-				<form asp-controller="Registration" asp-action="Completion" method="post" class="registration-input">
-					<div class="title">ลงทะเบียน</div>
-					<div class="title-input">รหัสพนักงาน</div>
-					<div>
-						<input class="input-code" asp-for="code" />
-					</div>
-					<div class="text-center">
-						<button class="button">Log in</button>
-					</div>
-				</form>
+					<form asp-controller="Registration" asp-action="Completion" method="post" class="registration-input">
+						<div class="title">ลงทะเบียน</div>
+						<div class="title-input">รหัสพนักงาน</div>
+						<div>
+							<input class="input-code" asp-for="code" type="number" />
+						</div>
+						<div class="text-center">
+							<button class="button">Log in</button>
+						</div>
+					</form>
+				</div>
 			</div>
 		</div>
 	</div>
-	@* <img class="image-bottom-page" src="~/images/background-bottom.png" /> *@
 </div>
