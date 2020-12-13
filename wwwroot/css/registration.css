@@ -1,13 +1,25 @@
 #registration {
-	background-color: #08070A;
+	/* background-color: #08070A;
+	background-color: #3c493c; */
 	height: 100%;
+	background-image: url("../images/background-registration-completion.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	/* background-size: 100%; */
+	text-align: center;
 }
 
-.middle-view {
+#registration .image-logo {
+	width: 500px;
+	margin-top: 50px;
+}
+
+#registration .middle-view {
 	position: absolute;
-	top: 40%;
+	top: 30%;
 	z-index: 2000;
 	width: 100%;
+	background-color: #4A1F19;
 }
 
 .content-view {
@@ -15,17 +27,12 @@
 	margin: 0px auto;
 	height: auto;
 	overflow: auto;
-	text-align: center;
+	
+	padding: 40px;
 }
 
 /* 				(auto)	540px		720px		960px		1140px
 Class prefix	.col-	.col-sm-	.col-md-	.col-lg-	.col-xl- */
-
-.image-logo {
-	width: 350px;
-	margin-top: -180px;
-	position: fixed;
-}
 
 .registration-input {
 	margin-top: -20px;
@@ -34,34 +41,36 @@ Class prefix	.col-	.col-sm-	.col-md-	.col-lg-	.col-xl- */
 .registration-input .title {
 	font-size: 60px;
 	text-align: center;
-	color: #fff;
-	margin-left: 150px;
+	color: #F5B64A;
 	margin-bottom: -10px;
+	font-family: "Prompt-2";
 }
 
 .registration-input .title-input {
-	font-size: 36px;
+	font-size: 20px;
 	color: #fff;
 }
 
 .registration-input .input-code {
-	font-size: 35px;
-	color: #000;
-	margin: 15px 0px 15px 10px;
-	padding: 1px 0px;
+	font-size: 40px;
+	color: #D54846;
+	margin: 30px 0px;
+	padding: 3px 0px 1px 0px;
 	text-align: center;
-	border-radius: 5px;
+	border-radius: 10px;
+	font-style: oblique;
+    letter-spacing: 3px;
 }
 
 .registration-input .button {
-	font-size: 30px;
+	font-size: 23px;
 	text-align: center;
-	background-color: #7D7D7D;
+	background-color: #8A8A8A;
 	color: #fff;
-	padding: 1px 30px;
+	padding: 4px 30px;
 	border: none;
-	border-radius: 5px;
-	margin-left: 150px;
+	border-radius: 30px;
+	text-transform: uppercase;
 }
 
 @media (max-width: 767.98px) { 
@@ -94,21 +103,49 @@ Class prefix	.col-	.col-sm-	.col-md-	.col-lg-	.col-xl- */
 
 /* registration-result */
 
+#registration-result {
+	background-image: url("../images/background-registration-completion.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	/* background-size: 100%; */
+	width: 100%;
+	height: 100%;
+}
+
+#registration-result .middle-view {
+	position: absolute;
+	top: 15%;
+	z-index: 2000;
+	width: 100%;
+}
+
+
 .registration-result {
 	margin-top: -20px;
+	text-align: center;
+	
+}
+
+.registration-result .image-logo {
+	width: 400px;
+	margin-bottom: 20px;
 }
 
 .registration-result .title {
 	color:#fff;
-	font-size: 50px;
-	text-align: right;
+	font-size: 40px;
 	text-decoration: dotted;
 }
 
 .registration-result .name {
-	color:#fff;
+	color:#EFB84A;
 	font-size: 50px;
-	text-align: right;
+}
+
+.registration-result .table {
+	color:#fff;
+	font-size: 27px;
+	font-style: oblique;	
 }
 
 .box-result-remark {
@@ -117,12 +154,12 @@ Class prefix	.col-	.col-sm-	.col-md-	.col-lg-	.col-xl- */
 	background-size: cover;
 	background-size: 100% 100%;
 	width: 100%;
-	margin-top: -40px;
+	margin-top: -70px;
 }
 
 .box-result-remark .result-remark {
-	color:#fff;
-	font-size: 38px;
+	color:#533127;
+	font-size: 25px;
 	text-align: center;
 	padding: 80px 100px;
 	width: 100%;
@@ -138,10 +175,10 @@ Class prefix	.col-	.col-sm-	.col-md-	.col-lg-	.col-xl- */
 	}
 
 	.box-result-remark {
-		margin-top: -40px;
+		margin-top: -70px;
 	}
 
 	.box-result-remark .result-remark {
-		font-size: 30px;
+		font-size: 25px;
 	}
 }

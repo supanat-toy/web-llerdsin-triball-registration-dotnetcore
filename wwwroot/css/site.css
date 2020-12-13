@@ -1,6 +1,6 @@
 ﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification\ 
 for details on configuring this project to bundle and minify static web assets. */
-@font-face {
+/* @font-face {
     font-family: 'FCActiveRegular';
     src: url('../fonts/FCActiveRegular.eot?#iefix') format('embedded-opentype'),  
          url('../fonts/FCActiveRegular.woff') format('woff'), 
@@ -8,7 +8,59 @@ for details on configuring this project to bundle and minify static web assets. 
          url('../fonts/FCActiveRegular.svg#FCActiveRegular') format('svg');
     font-weight: normal;
     font-style: normal;
-  }
+  } */
+
+  @font-face {
+    font-family: 'Prompt-1';
+    src: url('../fonts/Prompt-Medium.eot');
+    src: url('../fonts/Prompt-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Prompt-Medium.woff2') format('woff2'),
+        url('../fonts/Prompt-Medium.woff') format('woff'),
+        url('../fonts/Prompt-Medium.ttf') format('truetype'),
+        url('../fonts/Prompt-Medium.svg#Prompt-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Prompt-2';
+    src: url('../fonts/Prompt-SemiBold.eot');
+    src: url('./fonts/Prompt-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Prompt-SemiBold.woff2') format('woff2'),
+        url('../fonts/Prompt-SemiBold.woff') format('woff'),
+        url('../fonts/Prompt-SemiBold.ttf') format('truetype'),
+        url('../fonts/Prompt-SemiBold.svg#Prompt-SemiBold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Prompt-3';
+    src: url('../fonts/Prompt-Bold.eot');
+    src: url('../fonts/Prompt-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Prompt-Bold.woff2') format('woff2'),
+        url('../fonts/Prompt-Bold.woff') format('woff'),
+        url('../fonts/Prompt-Bold.ttf') format('truetype'),
+        url('../fonts/Prompt-Bold.svg#Prompt-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Prompt-4';
+    src: url('../fonts/Prompt-ExtraBold.eot');
+    src: url('../fonts/Prompt-ExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Prompt-ExtraBold.woff2') format('woff2'),
+        url('../fonts/Prompt-ExtraBold.woff') format('woff'),
+        url('../fonts/Prompt-ExtraBold.ttf') format('truetype'),
+        url('../fonts/Prompt-ExtraBold.svg#Prompt-ExtraBold') format('svg');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
   
 html, body {
 	margin: 0; 
@@ -17,7 +69,7 @@ html, body {
 }
 
 body {
-    font-family: 'FCActiveRegular' !important;
+    font-family: 'Prompt-1' !important;
     
     /* padding-top: 50px; */
     /* padding-bottom: 20px; */
