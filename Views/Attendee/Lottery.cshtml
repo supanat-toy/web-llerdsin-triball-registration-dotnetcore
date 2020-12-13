@@ -1,0 +1,44 @@
+@model IEnumerable<LotteryAttendeeViewModel>
+@{
+    ViewData["Title"] = "Lottery Lucky";
+}
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="~/css/lottery.css" />
+
+<style>
+    table {
+        background-color: #fff;
+    }
+</style>
+
+<div id="lottery">
+    <div class="container">
+        @foreach (var lottery in Model) {
+            <div class="box-table">
+                <div class="title">@lottery.name</div>
+                <div class="table-responsive">
+                    <table class="custom-table table-striped table-bordered">
+                        <thead>
+                            <tr>
+                                <th>Code</th>
+                                <th>Name TH</th>
+                                <th style="width: 35%;">Division</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in lottery.attendees) 
+                            {
+                                <tr>
+                                    <td>@item.code</td>
+                                    <td>@item.nameTH</td>
+                                    <td>@item.division</td>
+                                </tr>
+                                }  
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        }
+    </div>
+</div>

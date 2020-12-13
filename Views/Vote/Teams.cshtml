@@ -1,0 +1,38 @@
+@model IEnumerable<Team>
+@{
+    ViewData["Title"] = "Teams";
+    var attendeeCode = ViewData["attendeeCode"] as string;
+    var teamColors = new string[] {"#36C1D6", "#FAB717", "#6E27C5", "#F86602", "#151097", "#F1352B", "#F81198", "#7ACB00", "#AFAFAF"};
+    var index = 0;
+}
+
+<link rel="stylesheet" href="~/css/Vote/teams.css" />
+
+<div id="teams">
+	<img class="image-top-page" src="~/images/background-top.png" />
+    <img class="image-bottom-page" src="~/images/background-bottom.png" />
+    <div class="team-list">
+        <div class="container">
+            <div class="row">
+                @foreach (var team in Model) 
+                {
+                    var color = teamColors[index];
+                    <div class="col-md-4 col-12">
+                        <form asp-controller="Vote" asp-action="Completion" method="post" class="vote-teams">
+                            <input name="code" value="@attendeeCode" hidden />
+                            <input name="voteTeamId" value="@team.id" hidden />
+                            <img class="image" src="https://www.projet-react.org/wp-content/themes/flymag/images/placeholder.png" hidden />
+                            <div class="code" hidden>Team @team.code</div>
+                            <div class="box-code" style="background-color:@color">Team @team.code</div>
+                            <div class="name">@team.name</div>
+                            <div class="division">@team.division</div>
+                            <button class="button">เลือก</button>
+                        </form>
+                    </div>
+                    index++;
+                }
+            </div>
+        </div>
+    </div>
+    
+</div>
